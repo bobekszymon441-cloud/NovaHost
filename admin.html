@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ROOT — NovaHost V4</title><link rel="stylesheet" href="style.css"><style>main{max-width:1050px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;text-align:left}th,td{padding:12px;border-bottom:1px solid #294468}th{color:#8bc9ff}td{overflow-wrap:anywhere}.root-pill{color:#a7e6ff;font-weight:bold}.muted{color:#a9bdd5}</style></head>
+<body><header><a class="logo" href="index.html">NOVA<span>HOST</span></a><a href="panel.html">Panel klienta</a></header>
+<main><p class="eyebrow">NOVA HOST · V4</p><h1>Panel administratora ROOT</h1>
+<p id="status" class="status" role="status">Sprawdzanie uprawnień…</p>
+<section id="root-content" hidden><div class="toolbar"><p>Administrator: <strong id="admin-email"></strong></p><button id="logout" type="button">Wyloguj się</button></div>
+<div class="card"><h2>Konta użytkowników</h2><p class="muted">Tylko podgląd profili. Zmiana ról odbywa się w Supabase SQL Editor.</p><div class="table-wrap"><table><thead><tr><th>E-mail</th><th>Rola</th><th>Data utworzenia</th></tr></thead><tbody id="users-body"></tbody></table></div><p id="users-status" class="muted"></p></div>
+<div class="card"><h2>Serwery Minecraft</h2><p>Brak podłączonego backendu. Ta wersja nie tworzy ani nie uruchamia serwerów.</p></div></section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="config.js"></script><script src="admin.js"></script></body></html>
